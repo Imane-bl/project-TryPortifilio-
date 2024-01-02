@@ -1,0 +1,240 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+  margin:0;
+  padding:0;
+box-sizing:border-box;
+}
+
+:root{
+--primary-color:#be3144;
+--sec-color:#f0f0f0;
+--thir-color:#45567d;
+--for-color:#303841;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  line-height:1.52;
+}
+.container{
+  width:100%;
+  padding:0 1.5rem;
+  margin:auto;
+  overflow:hidden;
+  background-color:var(--for-color);
+}
+#navbar{
+  background-color:var(--primary-color);
+  color:var(--sec-color);
+  padding: 0rem 3rem;
+  display:flex;
+  justify-content: flex-end;
+position:fixed;
+width:100vw;
+
+  }
+  #navbar ul{
+    list-style:none;
+    display:flex;
+     
+    
+  }
+  #navbar ul a{
+    display:inline-block;
+    text-decoration:none;
+    color:var(--sec-color);
+    font-weight:500;
+    padding:5px;
+    font-size:1.2rem;
+  }
+  #navbar ul a:hover{
+    background-color:var(--thir-color);
+    
+    }
+     .container{
+      height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+    }
+    #title{
+     font-size:3.1rem;
+     font-weight:900;
+     color:var(--sec-color);
+    }
+    .lead{
+  font-style:italic;
+  color:var(--primary-color);
+  font-size:25px;
+ font-weight:510;
+} 
+#welcome-section h1{
+  color:var(--sec-color);
+  border-bottom:2px solid var(--sec-color);
+  line-height:1.4;
+  font-size:40px;
+  font-weight:bolder;
+  text-transform:capitalize;
+}
+.container2{
+     margin:60px auto;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+flex-direction:column;
+}
+#welcome-section{
+
+  background-color:var(--thir-color);
+  text-align:center;
+  width:100%;
+  padding:3rem 2rem;
+}
+
+
+#welcome-section #projects{
+
+  display:grid;
+  grid-template-columns: repeat( 3, 1fr);
+  gap: 40px 30px;
+  margin: 60px auto;
+}
+img{
+  width:100%;
+ height:300px;
+}
+
+
+#welcome-section #projects .project-tile{
+background-color:var(--for-color);
+border-radius:3px;
+
+}
+
+
+#welcome-section #projects .project-tile a{
+ color:#ddd; text-decoration:none;
+ cursor:pointer;
+}
+
+
+#welcome-section #projects .project-tile a p{
+  padding:1rem;
+  font-size:20px;
+  font-weight:700;
+}
+.code{
+  color:var(--for-color);
+  transition:.5s all ease;
+}
+#welcome-section #projects .project-tile:hover .code{
+  color:var(--primary-color);
+}
+  .btn
+  {text-align:center;
+    color:#ddd;
+    text-decoration:none;
+margin:20px auto; 
+font-weight:bold;
+font-size:20px;
+background-color:var(--for-color); 
+border:none;
+padding:10px;
+border-radius:3px;
+width:155px;
+margin-top:-7px;
+}
+.btn:hover{
+  background-color:var(--primary-color);
+  transition: all.5s ease-in-out;
+  cursor:pointer;
+}
+.change{
+  transition:all .5s;
+}
+ .change:hover{
+  
+  transition: transformX(10px);
+  color:white;
+ 
+}
+
+
+/* CONTACT */
+
+  #contact{
+  color:#ddd;
+  height:80vh;
+}
+
+
+
+#contact .container h1{
+  font-size:58px;
+font-weight:bolder;
+}
+#contact .container> p{
+  font-style:italic;
+  margin-bottom:40px;
+  font-size:20px;
+}
+#contact .container{
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  display:flex;
+}
+
+
+
+   .media a{
+   display:inline-block;text-decoration:none;
+  margin:10px ;  color:#ddd;
+  font-size:1.5rem;
+
+  font-family: 'Poppins', sans-serif;
+  transition: all .5s ease-in-out;
+ 
+ } 
+.media a:hover{
+   box-shadow:0px 0px  3rem #222;
+;
+  transform: translateY(20px);
+}
+i{ 
+  
+letter-spacing:6px;
+ }
+
+
+ /* footer */
+ footer{
+   position:relative;
+   border-top:7px solid var(--primary-color);
+   background-color:var(--for-color);
+   color:#ddd;
+   height:130px;
+ }
+ footer >p{
+   margin:49px 40px;
+   font-size:20px;
+ }
+ footer .end{
+   position:absolute;
+   left:900px;
+   top:55px;
+ }
+
+
+ @media (max-width:767px) {
+  body{
+    width:1016px;
+}
+#navbar{
+  min-width: 1015px;
+}
+
+ }
